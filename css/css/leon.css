@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --background--color: #543bad;
+  --secand-background: #ced8fb;
+  --main-color: #7f7a75;
+  --main-transtion: 0.3s;
+}
+
+body {
+  text-transform: capitalize;
+  background-color: var(--secand-background);
+}
+
+.parent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.parent .contaner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+  text-align: center;
+  background-color: #ffffff;
+  width: 800px;
+  max-width: 100%;
+  min-height: 480px;
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+}
+
+.parent .contaner .icons h1 {
+  font-size: 3rem;
+}
+
+.parent .contaner .icons a {
+  padding: 10px;
+  font-size: 20px;
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+  margin-bottom: 5px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.parent .contaner .icons p {
+  margin: 30px 0;
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+.Data input {
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  background-color: #eeeeee;
+  height: 45px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.parent .contaner .sign {
+  margin: 15px;
+}
+
+.parent .contaner .sign a {
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--main-color);
+  transition: var(--main-transtion);
+  -webkit-transition: var(--main-transtion);
+  -moz-transition: var(--main-transtion);
+  -ms-transition: var(--main-transtion);
+  -o-transition: var(--main-transtion);
+}
+
+.parent .contaner .sign a:hover {
+  color: black;
+}
+
+.parent .contaner .sign button {
+  margin: 25px 0 0;
+  text-transform: uppercase;
+  background-color: var(--background--color);
+  padding: 5px;
+  width: 125px;
+  color: white;
+  font-weight: 600;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  transition: var(--main-transtion);
+  -webkit-transition: var(--main-transtion);
+  -moz-transition: var(--main-transtion);
+  -ms-transition: var(--main-transtion);
+  -o-transition: var(--main-transtion);
+}
+
+.parent .contaner .sign button:hover {
+  background-color: black;
+}
+
+.parent .contaner .hello {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 470px;
+  width: 470px;
+  background: var(--background--color);
+  color: white;
+  border-radius: 200px 20px;
+}
+
+@media(max-width: 600px) {
+  .parent .contaner {
+    width: 345px;
+  }
+
+  .Data input {
+    margin-right: 5px;
+  }
+
+  .parent .contaner .hello p {
+    line-height: 1.6;
+  }
+}
+
+@media(min-width: 600px) {
+  .parent .contaner {
+    width: 580px;
+  }
+
+  .parent .contaner .hello {
+    border-radius: 135px 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .parent .contaner {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .parent .contaner {
+    width: 980px;
+  }
+
+  .Data input {
+    width: 400px;
+    margin-left: 45px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .parent .contaner {
+    width: 1190px;
+  }
+
+  .Data input {
+    width: 460px;
+    margin-left: 130px;
+  }
+}
