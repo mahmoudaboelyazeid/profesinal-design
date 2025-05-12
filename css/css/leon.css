@@ -134,6 +134,7 @@ body {
   background: var(--background--color);
   color: white;
   border-radius: 200px 20px;
+  margin-right: 5px;
 }
 
 @media(max-width: 600px) {
@@ -157,6 +158,10 @@ body {
 
   .parent .contaner .hello {
     border-radius: 135px 20px;
+  }
+
+  .Data input {
+    margin-right: 10px;
   }
 }
 
